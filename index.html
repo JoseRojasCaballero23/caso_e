@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Bros - Edición Digital</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger py-3">
+        <div class="container">
+            <a class="navbar-brand retro-font" href="#">
+                <i class="fas fa-gamepad me-2"></i>MarioBros<span class="text-warning">Store</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#buy">Comprar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5">
+        <div class="container py-5">
+            <h1 class="retro-font display-4 text-warning">SUPER MARIO BROS</h1>
+            <h2 class="text-white mb-4">Edición Coleccionista Digital</h2>
+            <img src="mario-hero.png" alt="Mario Bros" class="img-fluid pixel-art" width="300">
+            <p class="lead mt-3">¡Descarga el clásico de NES + Contenido exclusivo!</p>
+            <a href="#buy" class="btn btn-warning btn-lg mt-3 retro-font">VER OFERTA</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-secondary">
+        <div class="container">
+            <h2 class="text-center retro-font mb-5">¿QUÉ INCLUYE?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-3 border border-warning rounded bg-dark">
+                        <i class="fas fa-gamepad fa-3x text-warning mb-3"></i>
+                        <h3 class="retro-font-small">Juego Completo</h3>
+                        <p>ROM de Super Mario Bros + Emulador.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border border-warning rounded bg-dark">
+                        <i class="fas fa-book fa-3x text-warning mb-3"></i>
+                        <h3 class="retro-font-small">Guía de Estrategia</h3>
+                        <p>Trucos y secretos para 100%.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border border-warning rounded bg-dark">
+                        <i class="fas fa-images fa-3x text-warning mb-3"></i>
+                        <h3 class="retro-font-small">Arte Digital</h3>
+                        <p>Wallpapers exclusivos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border border-warning rounded bg-dark">
+                        <i class="fas fa-music fa-3x text-warning mb-3"></i>
+                        <h3 class="retro-font-small">Soundtrack</h3>
+                        <p>Banda sonora original.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Section con Mario y Luigi -->
+    <section id="buy" class="py-5 bg-dark">
+        <div class="container text-center">
+            <h2 class="retro-font text-warning mb-4">¡SOLO S/35.99!</h2>
+            <div class="row justify-content-center align-items-center">
+                <!-- Mario (izquierda) -->
+                <div class="col-md-3 d-none d-md-block text-end">
+                    <img src="mario.png" alt="Mario" class="img-fluid character-left" width="150">
+                </div>
+                
+                <!-- Pack Digital (centro) -->
+                <div class="col-md-6">
+                    <div class="card bg-black border-warning">
+                        <div class="card-header bg-danger">
+                            <h3 class="retro-font mb-0">Pack Digital</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2 text-warning"><i class="fas fa-check text-success me-2"></i>Juego + Emulador</li>
+                                <li class="mb-2 text-warning"><i class="fas fa-check text-success me-2"></i>Guía PDF (50 páginas)</li>
+                                <li class="mb-2 text-warning"><i class="fas fa-check text-success me-2"></i>10 Wallpapers HD</li>
+                                <li class="mb-2 text-warning"><i class="fas fa-check text-success me-2"></i>Soundtrack MP3</li>
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success retro-font" data-bs-toggle="modal" data-bs-target="#whatsappModal">
+                                    <i class="fab fa-whatsapp me-2"></i>Comprar por WhatsApp
+                                </button>
+                                <button class="btn btn-warning retro-font" data-bs-toggle="modal" data-bs-target="#paymentModal">
+                                    <i class="fas fa-shopping-cart me-2"></i>COMPRAR AHORA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Luigi (derecha) -->
+                <div class="col-md-3 d-none d-md-block text-start">
+                    <img src="luigi.png" alt="Luigi" class="img-fluid character-right" width="150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de WhatsApp -->
+    <div class="modal fade" id="whatsappModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-center p-4 border-success">
+                <div class="modal-header border-success">
+                    <h5 class="modal-title text-success retro-font">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-4">¿Deseas contactarnos por WhatsApp?</p>
+                    <a href="https://wa.me/51946409061?text=¡Hola!%20Quiero%20comprar%20el%20Pack%20Digital%20de%20Mario%20Bros%20por%20S/35.99" 
+                       class="btn btn-success btn-lg retro-font" target="_blank">
+                       <i class="fab fa-whatsapp me-2"></i>Abrir Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Pago -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-warning">
+                    <h5 class="modal-title retro-font">Métodos de Pago</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="paymentForm">
+                        <div class="mb-4 text-center">
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <button type="button" class="btn btn-outline-light payment-method active" data-method="card">
+                                    <i class="fab fa-cc-visa fa-2x me-2"></i>Tarjeta
+                                </button>
+                                <button type="button" class="btn btn-outline-light payment-method" data-method="paypal">
+                                    <i class="fab fa-paypal fa-2x me-2"></i>PayPal
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="cardPayment" class="payment-section">
+                            <div class="mb-3">
+                                <label class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control bg-black text-white border-warning" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Número de Tarjeta</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-black text-white border-warning" placeholder="1234 5678 9012 3456" required>
+                                    <span class="input-group-text bg-black border-warning">
+                                        <i class="fab fa-cc-visa text-primary me-2"></i>
+                                        <i class="fab fa-cc-mastercard text-danger"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Fecha de Expiración</label>
+                                    <input type="text" class="form-control bg-black text-white border-warning" placeholder="MM/AA" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">CVV</label>
+                                    <input type="text" class="form-control bg-black text-white border-warning" placeholder="123" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100 retro-font mt-3">
+                                <i class="fas fa-lock me-2"></i>PAGAR S/35.99
+                            </button>
+                        </div>
+
+                        <div id="paypalPayment" class="payment-section d-none">
+                            <div class="alert alert-info">
+                                Serás redirigido a PayPal para completar el pago.
+                            </div>
+                            <button type="button" class="btn btn-primary w-100">
+                                <i class="fab fa-paypal me-2"></i>Pagar con PayPal
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Éxito -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content bg-dark text-center p-4 border-success">
+                <div class="success-check mb-3">
+                    <div class="check-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <h3 class="retro-font text-success">¡Pago Exitoso!</h3>
+                <p class="mb-3">Recibirás un correo con tu producto.</p>
+                <button class="btn btn-warning w-100 retro-font-sm" data-bs-dismiss="modal">
+                    ACEPTAR
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-danger">
+        <div class="container">
+            <h2 class="text-center retro-font mb-5">PREGUNTAS FRECUENTES</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item bg-dark text-white">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            ¿Es legal este producto?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Es un <strong>fan-art digital</strong> no afiliado a Nintendo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-white">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            ¿Cómo recibo mi compra?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Te llegará un email con los enlaces de descarga en menos de 5 minutos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4">
+        <div class="container text-center">
+            <p class="retro-font-small">© 2024 MarioBrosStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script>
+        // Cambiar entre métodos de pago
+        document.querySelectorAll('.payment-method').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.payment-method').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                document.querySelectorAll('.payment-section').forEach(section => {
+                    section.classList.add('d-none');
+                });
+                
+                const method = button.getAttribute('data-method');
+                document.getElementById(`${method}Payment`).classList.remove('d-none');
+            });
+        });
+
+        // Simular pago exitoso
+        document.getElementById('paymentForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+            paymentModal.hide();
+            
+            setTimeout(() => {
+                new bootstrap.Modal(document.getElementById('successModal')).show();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

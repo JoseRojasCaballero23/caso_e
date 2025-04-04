@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+.retro-font {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+}
+
+.retro-font-small {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+}
+
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('assets/img/bg-pixel.png') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+/* Personajes */
+.character-left {
+    animation: float-left 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 193, 7, 0.7));
+}
+
+.character-right {
+    animation: float-right 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.7));
+}
+
+@keyframes float-left {
+    0% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(-5deg); }
+}
+
+@keyframes float-right {
+    0% { transform: translateY(0) rotate(5deg); }
+    50% { transform: translateY(-20px) rotate(-5deg); }
+    100% { transform: translateY(0) rotate(5deg); }
+}
+
+/* Card del Pack Digital */
+.card {
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.4);
+}
+
+/* Modal de éxito */
+.success-check {
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+.check-circle {
+    width: 80px;
+    height: 80px;
+    background: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: checkmark 0.6s ease-in-out;
+}
+
+.check-circle i {
+    color: white;
+    font-size: 40px;
+}
+
+@keyframes checkmark {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Botones */
+.btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+.btn-warning {
+    background-color: #FFC107;
+    border-color: #FFC107;
+    color: #000;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .character-left, .character-right {
+        width: 100px !important;
+        margin: 20px auto;
+        display: block !important;
+    }
+    
+    .hero-section {
+        min-height: 60vh;
+    }
+    
+    .retro-font {
+        font-size: 1.5rem;
+    }
+}
